@@ -1,9 +1,9 @@
 local skynet = require "skynet"
 require "skynet.manager"
 
-local last_hour = -1
-local log_path = skynet.getenv("logpath")
-local log_file = nil
+local last_hour	= -1
+local log_path  = skynet.getenv("logpath")
+local log_file  = nil
 local log_group = skynet.getenv("loggroup")
 local is_daemon = skynet.getenv("daemon") ~= nil
 
